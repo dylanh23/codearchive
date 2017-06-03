@@ -13,5 +13,9 @@ public class priorityQueue {
       // do something with current
 
     }
+    while (myPriorityQueue.size() > 0) {
+      int current = myPriorityQueue.remove();
+      myPriorityQueue.peek();
+    }
   }
 }
