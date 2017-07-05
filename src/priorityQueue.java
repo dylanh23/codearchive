@@ -23,7 +23,10 @@ public class priorityQueue {
       // do something with current
 
     }
-
+    while (myPriorityQueue.size() > 0) {
+      int current = myPriorityQueue.remove();
+      myPriorityQueue.peek();
+    }
     PriorityQueue<result> results = new PriorityQueue<>(new PriorityQueue<>(11, new Comparator<result>(){
       public int compare(result a, result b){
         if (a.i > b.i) return 1;
